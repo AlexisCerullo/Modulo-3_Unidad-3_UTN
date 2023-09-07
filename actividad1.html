@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let distancia = parseInt(prompt('Ingrese la distancia en metros'))
+
+        if (distancia < 0){
+            document.write('Por favor, ingrese un valor positivo')
+            console.log('Por favor, ingrese un valor positivo')
+        } else if (distancia >= 0 && distancia < 1000) {
+            document.write('Deberia viajar a pie')
+            console.log('Deberia viajar a pie')
+        } else if (distancia >= 1000 && distancia < 10000) {
+            document.write('Deberia viajar en bicicleta')
+            console.log('Deberia viajar en bicicleta')
+        } else if (distancia >= 10000 && distancia < 30000) {
+            document.write('Deberia viajar en colectivo')
+            console.log('Deberia viajar en colectivo')
+        } else if (distancia >= 30000 && distancia < 100000) {
+            document.write('Deberia viajar en auto')
+            console.log('Deberia viajar en auto')
+        } else if (distancia >= 100000) {
+            document.write('Deberia viajar en avion')
+            console.log('Deberia viajar en avion')
+        } else {
+            document.write('No ingreso un valor numérico')
+            console.log('No ingreso un valor numérico')
+        }
+
+    </script>
+</body>
+</html>
